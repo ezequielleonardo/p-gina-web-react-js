@@ -1,7 +1,7 @@
 import React from 'react';
 
 import "./styles/Badge.css"
-import confLogo from '../images/badge-header.svg'
+import confLogo from '../images/badge-header.svg';
 
 class Badge extends React.Component {
   render(){
@@ -12,8 +12,14 @@ class Badge extends React.Component {
         </div>
 
         <div className="Badge_section-name">
-          <img className="Badge_avatar" src={this.props.avatarUrl} alt="Avatar" />
-            <h1>{this.props.firstName}<br/>{this.props.lastName}</h1>
+          <img 
+            className="Badge_avatar" 
+            src={this.props.avatarUrl} 
+            alt="Avatar" 
+          />
+            <h1>
+              {this.props.firstName}<br/>{this.props.lastName}
+            </h1>
         </div>
 
         <div className="Badge_section-info">
@@ -21,9 +27,7 @@ class Badge extends React.Component {
           <div>@{this.props.twitter}</div>
         </div>
 
-        <div className="Badge_footer">
-          #platziconf
-        </div>
+        <div className="Badge_footer">#platziconf</div>
       </div>
     )
   };
